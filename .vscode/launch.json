@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Odoo Debugger",
+            "type": "debugpy",
+            "request": "attach",
+            "debugServer": 8068,
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/addons",
+                    "remoteRoot": "/mnt/extra-addons",
+                },
+                {
+                    "localRoot": "${workspaceFolder}/odoo",
+                    "remoteRoot": "/usr/lib/python3/dist-packages/odoo",
+                }
+            ],
+            "justMyCode": false
+        }
+    ]
+}
